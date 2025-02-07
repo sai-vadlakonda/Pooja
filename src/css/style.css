@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+:root{
+        /* Primary Colors */
+        --color-saffron: #FF9933;
+        --color-deep-red: #C72A2A;
+        --color-gold: #FFD700;    
+        /* Secondary Colors */
+        --color-white: #FFFFFF;
+        --color-warm-beige: #F5F5DC;
+        --color-dark-green: #2C5F2D;    
+        /* Text Colors */
+        --color-text-dark: #333333;
+        --color-text-light: #FFFFFF;    
+        /* Accent Colors */
+        --color-accent-blue: #007BFF;
+        --color-accent-orange: #FFA500;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* font-family: "Playwrite DE Grund", cursive;
+    font-family: "Varela Round", sans-serif; */
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+.flex-col{
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    content: inherit;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.font1{
+    font-size: 4.5rem;
+}
+.font2{
+    font-size: 1.5rem;
+}
+button{
+    background-color: transparent;
+    border:2px solid var(--color-saffron);
+    padding:7px 15px;
+    cursor: pointer;
+    content: inherit;
+}
+button, a {
+    font-family: inherit; /* Inherit from body if needed */
+    font-size: inherit;   /* or use specific values */
+}
+/* navbar */
+.nav-left img{
+    height: 5rem;
+}
+.navbar{
+    /* border:2px solid red; */
+    /* background-color: var(--color-saffron); */
+    /* justify-content: space-around; */
+}
+.nav-center-ul{
+    /* border: 2px solid red; */
+    padding:10px 20px;
+}
+.nav-center-ul li{
+    /* border:2px solid blue; */
+}
+.nav-right {
+    /* border:2px solid green; */
+    padding:10px 20px;
+}
+.section{
+    /* border:2px solid red; */
+    padding:20px 0px;
+    max-width: 95%;
+    margin: auto;
+}
+.container{
+    /* border:2px solid blue; */
+    max-width: 95%;
+    margin: auto;
+    position: relative;
+}
+.box-img{
+    width: 100%;   
+    height:35rem;
+    border-radius: 15px;
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.427);
+    position: absolute;
+    top:0%;
+}
+.content{
+    position: absolute;
+    top:0%;
+    /* border:2px solid red; */
+    color: var(--color-white);
+}
+#shopnow{  
+    color:white;
+    padding:10px 20px;
+}
+#shopnow:hover{
+    background-color: var(--color-text-dark);
+}
+.category{
+    /* border:2px solid black; */
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.category img{
+    height: 10rem;
+    width:10rem;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+}
+.products{
+    padding:20px 10px;
+}
+.product{
+    border:2px solid var(--color-saffron);
+    width: 15rem;
+    padding:10px;
+}
+.product img{
+    height: 13rem;
+}
